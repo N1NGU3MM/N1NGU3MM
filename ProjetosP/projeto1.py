@@ -3,7 +3,7 @@ PAGAR = -1
 
 while PAGAR != 0:  
 
-    VIAGEM = float(input('Digite quantos quílometros tera a sua viajem: '))
+    VIAGEM = float(input('Digite quantos quilometros tera a sua viajem: '))
     VALOR_DA_VIAGEM = 0.90  
     VALOR = VIAGEM * VALOR_DA_VIAGEM 
     
