@@ -4,25 +4,26 @@
 
 # Entrada
 # A entrada consiste de vários casos de teste. A primeira linha de entrada contém um inteiro N que indica a quantidade de casos de teste. 
-#Cada caso de teste consiste de dois valores A e B maiores que zero, cada um deles podendo ter até 1000 dígitos.
+# Cada caso de teste consiste de dois valores A e B maiores que zero, cada um deles podendo ter até 1000 dígitos.
 
 # Saída
 # Para cada caso de entrada imprima uma mensagem indicando se o segundo valor encaixa no primeiro valor, confome exemplo abaixo.
 
+def Paulinho():
+    n = int(input())
 
-n = int(input())
+    while n > 0:
+        values = input().split()
+        aux = ''
+        for digit in values[0][::-1]:
+            aux += digit
+            if aux == values[1][::-1]:
+                print('encaixa')
+                break
+        else:
+            print('nao encaixa')
 
-while n > 0:
-    values = input().split()
-    aux = ''
-    for digit in values[0][::-1]:
-        aux += digit
-        if aux == values[1][::-1]:
-            print('encaixa')
-            break
-    else:
-        print('nao encaixa')
+        aux = ''
 
-    aux = ''
-
-    n -= 1
+        n -= 1
+Paulinho()

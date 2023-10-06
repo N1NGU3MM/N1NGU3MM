@@ -7,10 +7,12 @@
 # Saída
 # A saída é dada em uma única linha. Ela deve ser "TWEET" (sem as aspas) se a linha de texto T tem até 140 caracteres. Se T tem mais de 140 caracteres, a saída deve ser "MUTE".
 
-tweet = str(input("Faça seu Tweet? " ))
-tamanho = tweet
-    
-if tweet <= tamanho[:140]:
-    print(tweet)
-else:
-    print('MUTE')
+def X():
+    tweet = str(input("Faça seu Tweet? " ))
+    tamanho = tweet
+        
+    if tweet <= tamanho[:140]:
+        print(tweet)
+    else:
+        print('MUTE')
+X()
