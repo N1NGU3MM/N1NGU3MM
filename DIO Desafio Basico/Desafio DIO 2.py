@@ -26,20 +26,3 @@ else:
     print()
 
 
-n = int(input("Digite o valor de N: "))
-
-while n > 0: 
-    a = input("Informe o valor de A: ")
-    b = input("Informe o valor de B: ")
-
-    if len(a) >= len(b):
-        if a[-len(b):] == b: 
-            print("encaixa")
-        else:
-            print("nao encaixa")
-    else:
-        print("nao encaixa")
-
-    n -= 1 
-
-
