@@ -41,7 +41,7 @@ def SISTEMA_BANCARIO():
                     print(f'Você sacou o valor de R${valor_sacado}')
                     transacoes.append(f'Saque de R${valor_sacado}')
                 else:
-                        print('Saldo indisponível. ')
+                        print(f'Limite maximo para saque R${limite}. ')
                         
 
         
