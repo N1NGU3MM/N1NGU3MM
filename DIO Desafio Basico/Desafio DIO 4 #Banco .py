@@ -47,7 +47,7 @@ def SISTEMA_BANCARIO():
         
         elif opção == 'e':
             print(f'Extrato: R${saldo_da_conta}')
-            print(transacoes )
+            print(transacoes)
 
         elif opção == 'q':
             break
