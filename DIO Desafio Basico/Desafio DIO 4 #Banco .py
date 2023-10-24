@@ -10,7 +10,6 @@ def SISTEMA_BANCARIO():
     '''
     saldo_da_conta = 1500
     limite = 500
-    extrato = ''
     numero_saques = 0
     LIMITE_SAQUES = 3
     transacoes = []
