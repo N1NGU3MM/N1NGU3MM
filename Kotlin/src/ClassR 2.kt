@@ -12,11 +12,11 @@ fun sum(x: Int, y: Int): Int { // 4. Is a function of math [sum]
 
 fun multiply(x: Int, y: Int) = x * y // 5. It's a forme of using a function a an unique line
 
-fun main(){                                            // 6. 
+fun main(){                                            // 6. h
     printMassager("Hello")                            // 7.
     printMessagerWithPrefix("Hello", "Log")           // 8.
     printlnMessageWithPrefix(prefix = ("Hello")       // 9.
     printlnMessageWithPrefix(prefix = "Log", message = "Hello")  // 10. 
     println(sum(1, 2)) 
     printl(multiply(2, 4))    
-}
+}  
