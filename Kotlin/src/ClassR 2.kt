@@ -2,7 +2,7 @@ fun printMessager(message: String): Unit {  // 1. It's an function using for cal
     println(message)  // 2. Remember [fun] is usingo for determined a function 
 }
 
-fun printMessagerWinthPrefix(nessage: String, prefix: String = "info"){ // 3. If not seted an prefix, the prefix is [info] 
+fun printMessagerWinthPrefix(message: String, prefix: String = "info"){ // 3. If not seted an prefix, the prefix is [info] 
     println("[$prefix] $message")
 }
 
