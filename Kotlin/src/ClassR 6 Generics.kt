@@ -31,7 +31,7 @@ class MutableStack<E>(vararg items: E) {              // 1 using <E> is tipper a
   }
 
 
-  
+
 
   // fun generic
   fun <E> mutableStackOf(vararg elements: E) = MutableStack(*elements)
@@ -39,4 +39,4 @@ class MutableStack<E>(vararg items: E) {              // 1 using <E> is tipper a
 fun main() {
   val stack = mutableStackOf(0.62, 3.14, 2.7)
   println(stack)
-}
+} //
