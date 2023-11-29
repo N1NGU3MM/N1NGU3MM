@@ -1,6 +1,7 @@
 lista_nome = []
 
 # saldo = 1500
+agencia = '0001'  
 LIMITE = 500
 LIMITE_SAQUE = 3
 #numero_saque = 0
@@ -63,6 +64,7 @@ while True:
     def criando_conta():
         
        
+        
              
         cpf = int(input('Diga seu CPF? '))
         data_de_nascimento = int(input('Qual a ano do seu nascimento? '))
@@ -83,11 +85,23 @@ while True:
                 menu_inicial()
         
         else:
-            nova_conta = {'cpf': cpf, 'nascimento': 2, 'saldo': 1500, 'numero_saque': 0, 'extrato': [], 
-                          'data_de_nascimente': data_de_nascimento, 'cpf': cpf, 'localização': localizacao,'nome': nome } 
+            nova_conta = {'cpf': cpf, 
+                          'nascimento': 2, 
+                          'saldo': 1500, 
+                          'numero_saque': 0, 
+                          'extrato': [], 
+                          'data_de_nascimente': data_de_nascimento, 
+                          'cpf': cpf, 
+                          'localização': localizacao,
+                          'nome': nome,
+                           'agencia': agencia, 
+                           'conta': len(lista_nome) + 1 
+                           } 
             
             lista_nome.append(nova_conta)
-            print('Conta criada!')
+        
+             
+            print('Conta criada!\n o numero da sua conta é:{}' .format(nova_conta['conta']))
             menu_inicial()
             return
             
@@ -100,10 +114,10 @@ while True:
     def cliente():
 
         
-        cpf = int(input('Qual o seu CPF? '))
+        conta_numero = int(input('Qual o número da sua conta? '))
         
         for conta in lista_nome:
-            if cpf == conta['cpf']:
+            if conta_numero == conta['conta']:
                 print('Olá', {conta['nome']}, 'como podemos ajudar você hoje? ')
                 menu_cliente(conta)
                 return
