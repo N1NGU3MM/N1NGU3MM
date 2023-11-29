@@ -8,11 +8,11 @@
 
 lista_nome = []
 
-# saldo = 1500
+
 agencia = '0001'  
 LIMITE = 500
 LIMITE_SAQUE = 3
-#numero_saque = 0
+
 
 extrato = {} 
 
@@ -30,6 +30,8 @@ while True:
     
     
     def menu_inicial():
+        #home page 
+        
         print(""" 
               Bem Vindo\n
               Selecione uma das opções abaixo\n
@@ -55,6 +57,7 @@ while True:
                  
     def criar_conta():
         
+        
         start = int(input('Você deseja criar a sua conta?\n [1] para SIM\n [2] para NÃO.\n'))
         
         
@@ -70,7 +73,7 @@ while True:
             
 
     def criando_conta():
-        
+        # Def for creating a new clients
        
         
              
@@ -84,7 +87,7 @@ while True:
         localizacao = {'cidade': endereço_cidade, 'rua': rua, 'estado': estado}
         
            
-        #nascimento = int(input('Qual ano você nasceu? '))
+        
 
 
         for conta in lista_nome:
@@ -102,7 +105,7 @@ while True:
                           'cpf': cpf, 
                           'localização': localizacao,
                           'nome': nome,
-                           'agencia': agencia, 
+                        'agencia': agencia, 
                            'conta': len(lista_nome) + 1 
                            } 
             
@@ -120,13 +123,20 @@ while True:
         
 
     def cliente():
-
         
-        conta_numero = int(input('Qual o número da sua conta? '))
+        #client menu
+
+        print('Agencia:', {conta['agencia']})
+        
+        conta_numero = int(input('Qual o número da sua conta?'))
         
         for conta in lista_nome:
             if conta_numero == conta['conta']:
                 print('Olá', {conta['nome']}, 'como podemos ajudar você hoje? ')
+                
+                print(f'Agencia:', {conta['agencia']})
+                print('Conta:', {conta['conta']})
+                
                 menu_cliente(conta)
                 return
             
@@ -164,6 +174,8 @@ while True:
        
         elif conta['numero_saque'] == LIMITE_SAQUE:
             print(f'Quantidade máximo de saque dirairo atingido.\nLimite diário de {LIMITE_SAQUE} saques diário.')
+            menu_cliente()
+            return
             
         else:
             print(f'Saque no valor de R$ {valor} foi realizado com sucesso.')
