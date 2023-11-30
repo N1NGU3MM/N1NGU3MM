@@ -50,7 +50,7 @@ while True:
             cliente()
         
         if menu == 3:
-            print('''kkkkkkkkk\2 
+            print('''kkkkkkkkk\n 
                   Não deu pra para sair\n 
                   Acabou o FREIOOOOOO!''')
             
@@ -126,12 +126,12 @@ while True:
         
         #client menu
 
-        print('Agencia:', {conta['agencia']})
+        print(f'Agencia: {agencia}' )
         
         conta_numero = int(input('Qual o número da sua conta?'))
         
         for conta in lista_nome:
-            if conta_numero == conta['conta']:
+            if conta_numero == conta[conta]:
                 print('Olá', {conta['nome']}, 'como podemos ajudar você hoje? ')
                 
                 print(f'Agencia:', {conta['agencia']})
