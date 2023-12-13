@@ -5,7 +5,7 @@ lista_nome = []
 LIMITE = 500
 LIMITE_SAQUE = 3
 #numero_saque = 0
-
+CPF_LIMITE = 6
 extrato = {} 
 
 def saldo_conta():
@@ -66,6 +66,10 @@ while True:
        
              
         cpf = int(input('Diga seu CPF? '))
+        if cpf < CPF_LIMITE:
+            print('CPF invalido')
+            else:
+                print('CPF valido')
         data_de_nascimento = int(input('Qual a ano do seu nascimento? '))
         nome = input('Digite seu nome completo: ')
         endereço_cidade = input('Qual sua cidade? ')

@@ -38,5 +38,5 @@ print(bmx.cor, bmx.modelo, bmx.ano, bmx.valor)
 
 #b2 = Bike('Blue', 'Caloi', '2002', '200')
 
-#Bike.stop(b2)
+#Bike.stop(b2)z 
 #print(b2.get_cor()) 
