@@ -35,7 +35,7 @@ class CriandoConta:
             'rua': rua, 
             'estado': estado,
             'agencia': '0001',
-            'numero_conta': 1  # Ajuste no código para adicionar automaticamente o número da conta
+            'numero_conta': 1  
         }
     
         return nova_conta
@@ -169,7 +169,7 @@ def PaginaInicial():
         return None
 
 
-# Instanciar objetos
+
 menu_principal = Menu()
 criar_conta = CriandoConta()
 informacao_clientes = InformacaoClientes()
@@ -177,5 +177,4 @@ cliente_menu = MenuDoCliente()
 corrente = ContaCorrente(informacao_clientes, cliente_menu)
 menu_cliente = MenuDoCliente()
 
-# Executar o programa
 PaginaInicial()
