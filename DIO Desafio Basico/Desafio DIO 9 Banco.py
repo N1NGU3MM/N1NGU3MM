@@ -47,9 +47,6 @@ class CriandoConta:
     def __str__(self):
         return f'InformacaoClientes: {self.informacoes_clientes}'
     
-    
-    
-
 
         
 class InformacaoClientes:
@@ -82,12 +79,22 @@ class InformacaoClientes:
 #         self._DadosClientes.append(self.informacoes_clientes)
         
 
-class Cliente(InformacaoClientes):
-    def __init__ (self):
-        self.agencia = self.informacoes_clientes['agencia']
-        
-    def oo (self):
-        print(f'Agencia {self.agencia}')
+class ContaCorrente:
+    contas_correntes = []
+
+    @staticmethod
+    def adicionar_conta_corrente(cliente, numero_conta):
+        conta_corrente = {'cliente': cliente, 'numero_conta': numero_conta}
+        ContaCorrente.contas_correntes.append(conta_corrente)
+
+    @staticmethod
+    def exibir_contas_correntes():
+        for conta_corrente in ContaCorrente.contas_correntes:
+            print(f"Cliente: {conta_corrente['cliente']['nome']}, Conta: {conta_corrente['numero_conta']}")
+
+
+
+
 
 
 class MenuDoCliente:
@@ -109,7 +116,7 @@ menu_principal = Menu()
 criar_conta = CriandoConta()
 clientes = InformacaoClientes()
 cliente_menu = MenuDoCliente()
-
+corrente = ContaCorrente()
 
 # bc = BancoDeDados()
 
@@ -121,8 +128,10 @@ def PaginaInicial():
         clientes.novo_cliente(nova_conta)
     
     if opcao_menu_principal == 2:
-        cliente_cpf = [cliente['cpf'] for cliente in clientes.clientes_inf()]
-        print(cliente_cpf)
+        ContaCorrente.exibir_contas_correntes()
+    
+    #    cliente_cpf = [cliente['cpf'] for cliente in clientes.clientes_inf()]
+    #    print(cliente_cpf)
         PaginaInicial()
 
 #        iof = Cliente()
