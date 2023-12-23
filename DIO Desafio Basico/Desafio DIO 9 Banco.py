@@ -150,7 +150,7 @@ def PaginaInicial():
             PaginaInicial()
     
     elif opcao_menu_principal == 2:
-       numero_conta = int(input('Qual o numero da sua conta? '))
+       numero_conta = int(input('''bem vindo ao nosso branco!\nAgencia: 0001\nPor favor nos informe o numero da sua conta? '''))
        corrente.exibir_conta_corrente(numero_conta)
     
     #    cliente_cpf = [cliente['cpf'] for cliente in clientes.clientes_inf()]
