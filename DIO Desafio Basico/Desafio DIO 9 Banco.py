@@ -2,7 +2,7 @@
 
 
 
-class Menu:
+class Menu: # Hare is homepage 
     def __init__(self):
         self.menu = ("""
           Bem Vindo\n
@@ -17,7 +17,7 @@ class Menu:
         return int(input('Qual opção você deseja? '))
 
 
-class CriandoConta:
+class CriandoConta: # Class for news accounts
     
     def CriarConta(self):
         cpf = int(input('Diga seu CPF? '))
@@ -34,7 +34,6 @@ class CriandoConta:
             'saldo': 1500,
             'numero_saque': 0,
             'extrato': [],
-            'data_de_nascimento': data_de_nascimento,
             'nome': nome,
             'cidade': endereco_cidade,
             'rua': rua, 
@@ -49,12 +48,16 @@ class CriandoConta:
     
 
         
-class InformacaoClientes:
+class InformacaoClientes: # Info abouto all dados of claints
     def __init__(self):
         super().__init__()
-        self.informacoes_clientes = []
+        self.informacoes_clientes = [{'cpf': 1, 'nascimento': 2000, 'saldo': 1500, 'numero_saque': 0, 'extrato': [],
+                                       'nome': 'Test', 'cidade': 'UI', 'rua': 'NP', 'estado': 'SP',
+                                       'agencia': '0001', 'numero_conta': 1}, {'cpf': 2, 'nascimento': 2000, 'saldo': 1500, 'numero_saque': 0, 'extrato': [],
+                                       'nome': 'Test2', 'cidade': 'UI', 'rua': 'NP', 'estado': 'SP',
+                                       'agencia': '0001', 'numero_conta': 2}]
     
-    def clientes_inf(self): # aqui é possiivel acessar todas as info dos clintes 
+    def clientes_inf(self): 
         return self.informacoes_clientes
     
     def novo_cliente(self, nova_conta):
@@ -63,7 +66,13 @@ class InformacaoClientes:
         print(f'''Conta criada com sucesso!\n
         O numero de sua conta é: {nova_conta['numero_conta']}''')
         
-        PaginaInicial()
+        return nova_conta
+    
+    def _Contas(self, contas): # aqui é possiivel acessar todas as info dos clintes 
+        contas = self.informacoes_clientes
+        self.contas = contas
+        return self.contas
+
 
 
 # class BancoDeDados (InformacaoClientes):
@@ -77,21 +86,36 @@ class InformacaoClientes:
 #     def adcionar_clinte(self):
 #         
 #         self._DadosClientes.append(self.informacoes_clientes)
+# bc = BancoDeDados()
         
 
 class ContaCorrente:
-    contas_correntes = []
+    def __init__(self, informacao_clientes, cliente_menu):
+        self.informacoes_clientes = informacao_clientes
+        self.cliente_menu = cliente_menu
 
-    @staticmethod
-    def adicionar_conta_corrente(cliente, numero_conta):
-        conta_corrente = {'cliente': cliente, 'numero_conta': numero_conta}
-        ContaCorrente.contas_correntes.append(conta_corrente)
+    def buscar_cliente(self, numero_conta):
+       
+        for cliente in self.informacoes_clientes.clientes_inf():
+            if cliente['numero_conta'] == numero_conta:
+                return [cliente]  # Retorna uma lista com o cliente encontrado
 
-    @staticmethod
-    def exibir_contas_correntes():
-        for conta_corrente in ContaCorrente.contas_correntes:
-            print(f"Cliente: {conta_corrente['cliente']['nome']}, Conta: {conta_corrente['numero_conta']}")
+        return []  # Retorna uma lista vazia se o cliente não for encontrado
 
+    def exibir_conta_corrente(self, cpf):
+        print("Bem vindo ao nosso banco!")
+        cpf = int(input('Digite o seu CPF para que possamos, validar seu acesso: '))
+        contas_encontradas = self.buscar_cliente(cpf)
+
+        if contas_encontradas:
+            cliente = contas_encontradas[0]
+            print(f'Sua conta foi encontrada: {cliente}')
+
+            print(f'Ola {cliente["nome"]}')
+            self.cliente_menu.exibir_menu_cliente()
+        else:
+            print('Conta não encontrada!')
+        
 
 
 
@@ -99,40 +123,40 @@ class ContaCorrente:
 
 class MenuDoCliente:
     def __init__(self):
-       self.menu_cliente = '''
+        self.menu_cliente = '''
     [1] Saldo
     [2] Saque
     [3] Depósito
     [4] Extrato
     [5] Sair
     '''
+
     def exibir_menu_cliente(self):
         print(self.menu_cliente)
-        return
+    
 
 
 
-menu_principal = Menu()
-criar_conta = CriandoConta()
-clientes = InformacaoClientes()
-cliente_menu = MenuDoCliente()
-corrente = ContaCorrente()
-
-# bc = BancoDeDados()
 
 def PaginaInicial():
     opcao_menu_principal = menu_principal.exibir_menu()
 
     if opcao_menu_principal == 1:
         nova_conta = criar_conta.CriarConta()
-        clientes.novo_cliente(nova_conta)
+        conta_criada = informacao_clientes.novo_cliente(nova_conta)
+        
+        if conta_criada:
+            print('Conta criada com sucesso!')
+            PaginaInicial()
     
-    if opcao_menu_principal == 2:
-        ContaCorrente.exibir_contas_correntes()
+    elif opcao_menu_principal == 2:
+       numero_conta = int(input('Qual o numero da sua conta? '))
+       corrente.exibir_conta_corrente(numero_conta)
     
     #    cliente_cpf = [cliente['cpf'] for cliente in clientes.clientes_inf()]
     #    print(cliente_cpf)
-        PaginaInicial()
+    
+    
 
 #        iof = Cliente()
 #        iof.oo()
@@ -141,6 +165,12 @@ def PaginaInicial():
 #        menu_do_cliente.exibir_menu_cliente()
 
 
+menu_principal = Menu()
+criar_conta = CriandoConta()
+informacao_clientes = InformacaoClientes()
+cliente_menu = MenuDoCliente()
+corrente = ContaCorrente(informacao_clientes, cliente_menu)
+menu_cliente = MenuDoCliente()
 
 
 PaginaInicial()
