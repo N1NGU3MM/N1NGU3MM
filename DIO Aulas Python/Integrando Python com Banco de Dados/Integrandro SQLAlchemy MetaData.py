@@ -1,5 +1,13 @@
-from sqlalchemy import create_engine, MetaData, Table
-from sqlalchemy import Column, Integer, String, ForeignKey, text
+from sqlalchemy import create_engine
+from sqlalchemy import MetaData
+from sqlalchemy import Table
+from sqlalchemy import Column
+from sqlalchemy import Integer
+from sqlalchemy import String
+from sqlalchemy import ForeignKey
+from sqlalchemy import text
+
+
 
 engine = create_engine('sqlite:///:memory')
 
@@ -13,6 +21,7 @@ user = Table(
     Column('nickname', String(50), nullable = False),
     
 )
+
 
 user_prefs = Table(
     'user_prefs',

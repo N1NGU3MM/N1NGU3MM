@@ -15,7 +15,7 @@ class Menu:
         return int(input('Qual opção você deseja? '))
 
 
-class CriandoConta:
+class Criando_Conta:
     def CriarConta(self):
         cpf = int(input('Diga seu CPF? '))
         data_de_nascimento = int(input('Qual o ano do seu nascimento? '))
@@ -41,7 +41,7 @@ class CriandoConta:
         return nova_conta
 
 
-class InformacaoClientes:
+class Informacao_Clientes:
     def __init__(self):
         self.informacoes_clientes = [{'cpf': 1, 'nascimento': 2000, 'saldo': 1500, 'numero_saque': 0, 'extrato': [],
                                        'nome': 'Test', 'cidade': 'UI', 'rua': 'NP', 'estado': 'SP',
@@ -62,7 +62,7 @@ class InformacaoClientes:
         return nova_conta
 
 
-class ContaCorrente:
+class Conta_Corrente:
     def __init__(self, informacao_clientes, cliente_menu):
         self.informacoes_clientes = informacao_clientes
         self.cliente_menu = cliente_menu
@@ -88,7 +88,7 @@ class ContaCorrente:
             print('Conta não encontrada!')
 
 
-class MenuDoCliente:
+class Menu_Do_Cliente:
     def __init__(self):
         self.menu_cliente = '''
     [1] Saldo
@@ -171,10 +171,10 @@ def PaginaInicial():
 
 
 menu_principal = Menu()
-criar_conta = CriandoConta()
-informacao_clientes = InformacaoClientes()
-cliente_menu = MenuDoCliente()
-corrente = ContaCorrente(informacao_clientes, cliente_menu)
-menu_cliente = MenuDoCliente()
+criar_conta = Criando_Conta()
+informacao_clientes = Informacao_Clientes()
+cliente_menu = Menu_Do_Cliente()
+corrente = Conta_Corrente(informacao_clientes, cliente_menu)
+menu_cliente = Menu_Do_Cliente()
 
 PaginaInicial()
