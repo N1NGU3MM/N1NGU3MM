@@ -41,12 +41,12 @@ session = Session(engine)
 cliente1 = Cliente(nome='João',
                    cpf='12345678901',
                    address='Rua ABC, 123')
-conta1 = Conta(tipo_conta='Corrente', agencia='001', num=12345, saldo=1000, cliente=cliente1)
+conta1 = Conta(tipo_conta='Corrente', agencia='0001', num=12345, saldo=1000, cliente=cliente1)
 
 cliente2 = Cliente(nome='Luiz',
                    cpf='87654327811',
                    address='Rua ABC, 124')
-conta2 = Conta(tipo_conta='Poupança', agencia='002', num=54321, saldo=1000, cliente=cliente2)
+conta2 = Conta(tipo_conta='Poupança', agencia='0001', num=54321, saldo=1000, cliente=cliente2)
 
 session.add(cliente1)
 session.add(conta1)
