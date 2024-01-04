@@ -16,7 +16,7 @@ class Menu:
 
 
 class Criando_Conta:
-    def CriarConta(self):
+    def criar_conta(self):
         cpf = int(input('Diga seu CPF? '))
         data_de_nascimento = int(input('Qual o ano do seu nascimento? '))
         nome = input('Digite seu nome completo: ')
@@ -48,7 +48,8 @@ class Informacao_Clientes:
                                        'agencia': '0001', 'numero_conta': 1},
                                       {'cpf': 2, 'nascimento': 2000, 'saldo': 1500, 'numero_saque': 0, 'extrato': [],
                                        'nome': 'Test2', 'cidade': 'UI', 'rua': 'NP', 'estado': 'SP',
-                                       'agencia': '0001', 'numero_conta': 2}]
+                                       'agencia': '0001', 'numero_conta': 2}
+                                    ]
 
     def clientes_inf(self):
         return self.informacoes_clientes
@@ -113,7 +114,7 @@ class Menu_Do_Cliente:
                 self.mostrar_extrato(cliente)
             elif opcao == 5:
                 print('Saindo...')
-                PaginaInicial()
+                pagina_inicial()
             else:
                 print('Opção inválida. Tente novamente.')
 
@@ -142,16 +143,16 @@ class Menu_Do_Cliente:
             print(operacao)
 
 
-def PaginaInicial():
+def pagina_inicial():
     opcao_menu_principal = menu_principal.exibir_menu()
 
     if opcao_menu_principal == 1:
-        nova_conta = criar_conta.CriarConta()
+        nova_conta = criar_conta.criar_conta()
         conta_criada = informacao_clientes.novo_cliente(nova_conta)
         
         if conta_criada:
             print('Conta criada com sucesso!')
-            PaginaInicial()
+            pagina_inicial()
     
     elif opcao_menu_principal == 2:
         numero_conta = int(input('''Deseja acessar sua conta corrente?\n
@@ -163,7 +164,7 @@ def PaginaInicial():
             print('Erro')
             for i in range(10):
                 print(i)
-            PaginaInicial()
+            pagina_inicial()
 
     elif opcao_menu_principal == 3:
         return None
@@ -177,4 +178,4 @@ cliente_menu = Menu_Do_Cliente()
 corrente = Conta_Corrente(informacao_clientes, cliente_menu)
 menu_cliente = Menu_Do_Cliente()
 
-PaginaInicial()
+pagina_inicial()
