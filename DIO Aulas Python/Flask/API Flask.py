@@ -35,7 +35,7 @@ def input():
 @app.route('/output', methods = ['GET', 'POST']) # output page 
 
 def predJson():
-    pred = r.choice(["positive", "negative"])
+    pred = run.choice(["positive", "negative"])
     nd = d # our input 
     nd ["prediction"] = pred
     
