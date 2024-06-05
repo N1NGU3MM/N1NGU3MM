@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\AulasC\\N1NGU3MM.csproj",
+      "projectUniqueName": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\DIO Aulas .NET\\N1NGU3MM.csproj",
       "projectName": "N1NGU3MM",
-      "projectPath": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\AulasC\\N1NGU3MM.csproj",
+      "projectPath": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\DIO Aulas .NET\\N1NGU3MM.csproj",
       "packagesPath": "C:\\Users\\aless\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\AulasC\\obj\\",
+      "outputPath": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\DIO Aulas .NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aless\\AppData\\Roaming\\NuGet\\NuGet.Config"
