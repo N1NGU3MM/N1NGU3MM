@@ -1,0 +1,15 @@
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\bin\Debug\net8.0\N1NGU3MM.exe
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\bin\Debug\net8.0\N1NGU3MM.deps.json
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\bin\Debug\net8.0\N1NGU3MM.runtimeconfig.json
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\bin\Debug\net8.0\N1NGU3MM.dll
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\bin\Debug\net8.0\N1NGU3MM.pdb
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.AssemblyInfoInputs.cache
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.AssemblyInfo.cs
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.csproj.CoreCompileInputs.cache
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.sourcelink.json
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.dll
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\refint\N1NGU3MM.dll
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.pdb
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\N1NGU3MM.genruntimeconfig.cache
+C:\Users\aless\OneDrive\Área de Trabalho\DIO\N1NGU3MM\DIO Aulas .NET\obj\Debug\net8.0\ref\N1NGU3MM.dll
