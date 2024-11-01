@@ -8,23 +8,26 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aless\\.nuget\\packages\\": {}
+    "C:\\Users\\Alessandro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\DIO Aulas .NET\\N1NGU3MM.csproj",
+      "projectUniqueName": "C:\\Users\\Alessandro\\Documents\\GitHub\\N1NGU3MM\\DIO Aulas .NET\\N1NGU3MM.csproj",
       "projectName": "N1NGU3MM",
-      "projectPath": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\DIO Aulas .NET\\N1NGU3MM.csproj",
-      "packagesPath": "C:\\Users\\aless\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aless\\OneDrive\\Área de Trabalho\\DIO\\N1NGU3MM\\DIO Aulas .NET\\obj\\",
+      "projectPath": "C:\\Users\\Alessandro\\Documents\\GitHub\\N1NGU3MM\\DIO Aulas .NET\\N1NGU3MM.csproj",
+      "packagesPath": "C:\\Users\\Alessandro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alessandro\\Documents\\GitHub\\N1NGU3MM\\DIO Aulas .NET\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\aless\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Alessandro\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
@@ -61,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
