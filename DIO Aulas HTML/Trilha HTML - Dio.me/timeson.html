@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+
+    <style> 
+        table thead th{
+            background-color:  black;
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background: #f1f1f1;
+        }
+
+        table tbody tr:hover td {
+            background: #929292;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Pagina Inicial</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="timeson.html">Horarios</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header -->
+                <img title="Logo da Clínica" src="banner-pag-clinica.jpg" width="1000">
+                
+            </div>
+            
+            <div class="content">
+                <!-- Aqui vai o seu conteúdo -->
+                <table summary="IDK"   width="280" cellspacing="20" cellpadding="5" align="center">
+                    <thead>
+                        <tr ID="1">
+                            <th>
+                                Serviços
+                            </th>
+                            <th>
+                                Segunda a Sexta
+                            </th>
+                            <th>
+                                Sábados
+                            </th>
+                            <TH>
+                                Feriados
+                            </TH>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr id="2">
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+            
+                        <tr id="3">
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+            
+                        <tr id="4">
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>>
+                        </tr>
+
+                        <tr id="5">
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>-</td>>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+    
+            <div class="footer">
+                <!-- Aqui vai o seu rodapé -->
+                <img src="https://img.freepik.com/vetores-gratis/cabecalho-do-twitter-de-servicos-medicos-de-design-plano_23-2149190590.jpg?t=st=1732883483~exp=1732887083~hmac=b79323738100b7fb4d8c113dd6e60748feb869dcb00d1309e055a9891356f992&w=1380" width="1000">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Table DIO</title>
+    <style> 
+        table thead th{
+            background-color:  black;
+            color: white;
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background: #f1f1f1;
+        }
+
+        table tbody tr:hover td {
+            background: #929292;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--table-->
+    <table summary="IDK"   width="250" cellspacing="0" cellpadding="5" align="center">
+        <caption>
+            Tabela de idade
+        </caption>
+
+        <!--cabesario de uma tabela-->
+        <thead>
+
+            <tr>
+                <th colspan="2">
+                    Minha tabela
+                </th>
+            </tr>
+
+            <tr id="1">
+                <th title="Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+    
+        </thead>
+        
+        <!--Corpo de uma tabela-->
+        <tbody>
+
+            <tr id="2">
+                <td>Nome</td>
+                <td>20</td>
+            </tr>
+
+            <tr id="3">
+                <td>Nome</td>
+                <td>18</td>
+            </tr>
+
+            <tr id="4">
+                <td>Nome</td>
+                <td>11</td>
+            </tr>
+
+        <tbody>
+
+        <!--Parte final de uma tabela-->
+        </tfoot>
+            <tr>
+                <td>Valor</td>
+                <td>50</td>
+            </tr>
+
+
+        </tfoot>
+        
+    </table>
+
+
+
+</body>
+</html>
